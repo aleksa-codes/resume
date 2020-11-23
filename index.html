@@ -50,6 +50,7 @@
   <body>
     <!-- Downlaod PDF -->
     <a
+      id="pdf-link"
       href="https://drive.google.com/uc?id=1UJ3CUuc0yemrjWL2XmA6Lek0PyvM53hX&export=download"
       style="text-decoration: none"
       download
@@ -1074,10 +1075,25 @@
       Written in HTML & CSS
     </div>
     <script>
-      window.setTimeout(() => {
-        document.getElementById('pdf-message').style.display = 'none';
-        document.getElementById('pdf-message').style.opacity = '0';
-      }, 4000);
+      const outPdf = (document.getElementById('pdf').onmouseout = () => {
+        let msg = document.getElementById('pdf-message');
+        msg.style.display = 'none';
+        msg.style.opacity = '0';
+      });
+
+      const hoverPdf = (document.getElementById('pdf').onmouseover = () => {
+        let msg = document.getElementById('pdf-message');
+        msg.style.display = 'block';
+        msg.style.opacity = '1';
+      });
+
+      function popUp() {
+        let pdfMessage = document.getElementById('pdf-message');
+        pdfMessage.style.display = 'none';
+        pdfMessage.style.opacity = '0';
+      }
+
+      window.addEventListener('load', setTimeout(popUp, 4000));
     </script>
   </body>
 </html>

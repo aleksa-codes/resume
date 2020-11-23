@@ -80,6 +80,12 @@ body {
   transform: scale(1.1);
 }
 
+#pdf:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
 #pdf img {
   height: 40px;
   width: 40px;
@@ -104,8 +110,8 @@ body {
   line-height: 1.5;
   font-family: 'Avenir Book1', 'Avenir Book2', 'Avenir Book3', 'Avenir Book4',
     'Avenir Book5', 'Avenir Book6', poppins, sans-serif;
-  -webkit-animation: pdfMessage 1s ease-out 3s normal;
-  animation: pdfMessage 1s ease-out 3s normal;
+  -webkit-animation: pdfMessage 1s ease-out 3s normal forwards;
+  animation: pdfMessage 1s ease-out 3s normal forwards;
 }
 
 @-webkit-keyframes pdfMessage {
