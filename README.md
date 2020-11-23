@@ -6,3 +6,5 @@ In this project I created my Resume from HTML and CSS, then converted it into a 
 - Working links
 - Selectable text
 - High-quality icons (converted from SVG)
+
+#### Converter used: https://cloudconvert.com/html-to-pdf (it's the only good one)
