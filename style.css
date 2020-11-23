@@ -113,10 +113,13 @@ input {
   width: 119.0551181102rem;
   background: #fff;
   position: relative;
-  margin: 0 auto;
+  margin: 32px auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0.4rem 0.7rem 9.3rem 0.3rem;
   overflow: hidden;
   font-size: 0;
+  height: auto;
 }
+
 #imprimir * {
   -webkit-transition-delay: 0.2s;
   -moz-transition-delay: 0.2s;
