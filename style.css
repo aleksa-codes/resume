@@ -6,8 +6,11 @@ html {
   margin: 0;
   font-size: 62.5%;
   font-family: poppins, Helvetica, sans-serif;
+  -webkit-transition: background 1s ease;
+  -o-transition: background 1s ease;
   transition: background 1s ease;
   -webkit-text-size-adjust: none;
+  -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 body {
@@ -17,15 +20,20 @@ body {
 }
 * {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
 
 #pdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 64px;
   height: 64px;
@@ -35,10 +43,13 @@ body {
   position: fixed;
   right: 8px;
   bottom: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
   z-index: 9999;
   cursor: pointer;
   font-weight: 600;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
 }
 
@@ -59,6 +70,7 @@ body {
   bottom: 6px;
   background: rgb(255, 255, 255) none repeat scroll 0% 0%;
   z-index: 9999;
+  -webkit-box-shadow: rgba(13, 12, 34, 0.1) -6px 0px 30px;
   box-shadow: rgba(13, 12, 34, 0.1) -6px 0px 30px;
   padding: 23px 24px;
   border-radius: 4px;
@@ -69,7 +81,23 @@ body {
   line-height: 1.5;
   font-family: 'Avenir Book1', 'Avenir Book2', 'Avenir Book3', 'Avenir Book4',
     'Avenir Book5', 'Avenir Book6', poppins, sans-serif;
+  -webkit-animation: pdfMessage 1s ease-out 3s normal;
   animation: pdfMessage 1s ease-out 3s normal;
+}
+
+@-webkit-keyframes pdfMessage {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
 }
 
 @keyframes pdfMessage {
@@ -93,11 +121,13 @@ body {
   margin: 0 auto;
   position: absolute;
   top: 50%;
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   text-align: center;
 }
 img {
+  -webkit-user-select: none;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -136,6 +166,16 @@ li img {
 }
 a {
   color: inherit;
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
 }
 @keyframes spin {
   from {
@@ -179,6 +219,7 @@ input {
   background: #fff;
   position: relative;
   margin: 32px auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.4rem 0.7rem 9.3rem 0.3rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0.4rem 0.7rem 9.3rem 0.3rem;
   overflow: hidden;
   font-size: 0;
@@ -186,8 +227,6 @@ input {
 
 #imprimir * {
   -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  -ms-transition-delay: 0.2s;
   -o-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
@@ -198,8 +237,17 @@ input {
   display: inline-block;
   width: 100%;
   opacity: 0;
+  -webkit-transition: 0.5s opacity ease, 0.5s -webkit-transform ease;
+  transition: 0.5s opacity ease, 0.5s -webkit-transform ease;
+  -o-transition: 0.5s opacity ease, 0.5s transform ease;
   transition: 0.5s opacity ease, 0.5s transform ease;
+  transition: 0.5s opacity ease, 0.5s transform ease,
+    0.5s -webkit-transform ease;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
   transform-origin: top;
 }
 .fin_hoja {
@@ -212,8 +260,14 @@ input {
   display: none;
   pointer-events: none;
   opacity: 1;
+  -webkit-animation: blinker 2s linear infinite;
   animation: blinker 2s linear infinite;
   animation: blinker 2s linear infinite;
+}
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 @keyframes blinker {
   50% {
@@ -231,11 +285,19 @@ input {
   padding-left: 2rem;
   position: relative;
   outline-offset: -4px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: outline 0.3s, -webkit-transform 0.2s ease;
+  transition: outline 0.3s, -webkit-transform 0.2s ease;
+  -o-transition: outline 0.3s, transform 0.2s ease;
   transition: outline 0.3s, transform 0.2s ease;
+  transition: outline 0.3s, transform 0.2s ease, -webkit-transform 0.2s ease;
   padding-right: 0.5rem !important;
 }
 .sortable {
+  -webkit-transition-delay: 0s !important;
+  -o-transition-delay: 0s !important;
   transition-delay: 0s !important;
   overflow: visible !important;
 }
@@ -245,6 +307,8 @@ input {
     outline: 0 !important;
     border: 2px dashed transparent;
     margin-top: -2px;
+    -webkit-transition: border-color 0.1s ease;
+    -o-transition: border-color 0.1s ease;
     transition: border-color 0.1s ease;
     transition-delay: 0s !important;
   }
@@ -266,15 +330,20 @@ input {
   margin: 0 auto;
   position: absolute;
   top: 50%;
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   text-align: center;
   color: #fff;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
   transition-delay: 0s;
   padding-top: 100%;
   padding-bottom: 100%;
   background: rgba(128, 128, 128, 0);
   opacity: 0.5;
+  -webkit-transition: 0.2s opacity ease, 0.2s background ease;
+  -o-transition: 0.2s opacity ease, 0.2s background ease;
   transition: 0.2s opacity ease, 0.2s background ease;
 }
 #inserta_imagenlabel img {
@@ -306,6 +375,7 @@ input {
   margin: 0 auto;
   position: absolute;
   top: 50%;
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   text-align: center;
@@ -392,7 +462,6 @@ input {
   opacity: 0;
   cursor: move;
   cursor: grab !important;
-  cursor: -moz-grab !important;
   cursor: -webkit-grab !important;
   background-image: url(../img/icon_move.svg);
   background-position: center;
@@ -406,6 +475,8 @@ input {
 .clonar,
 .eliminar,
 .mover {
+  -webkit-transition: 0.2s opacity ease;
+  -o-transition: 0.2s opacity ease;
   transition: 0.2s opacity ease;
 }
 .labelbotones {
@@ -414,6 +485,7 @@ input {
   margin: 0 auto;
   position: absolute;
   left: 50%;
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   text-align: center;
@@ -422,6 +494,7 @@ input {
   opacity: 0;
   white-space: nowrap;
   pointer-events: none;
+  -webkit-user-select: none;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -434,10 +507,12 @@ input {
   line-height: 1rem;
   z-index: -1;
   -webkit-transition: top 0s linear 0s;
-  -moz-transition: top 0s linear 0s;
-  -ms-transition: top 0s linear 0s;
   -o-transition: top 0s linear 0s;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-transition-delay: 0s !important;
+  -o-transition-delay: 0s !important;
   transition-delay: 0s !important;
 }
 .labelbotones:before {
@@ -446,6 +521,7 @@ input {
   bottom: -0.3rem;
   margin-left: -0.5rem;
   -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
   transform: rotate(135deg);
   content: '';
   position: absolute;
@@ -460,6 +536,8 @@ input {
   width: 100%;
   border-radius: 100px;
   font-size: 1rem;
+
+  -webkit-user-select: none;
 
   user-select: none;
   -moz-user-select: none;
@@ -564,6 +642,7 @@ input {
   margin: 0 auto;
   position: absolute;
   top: 50%;
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   text-align: center;
@@ -576,7 +655,11 @@ input {
 [contenteditable='true'] {
   cursor: text;
   text-align: left;
+  -webkit-transition-delay: 0s !important;
+  -o-transition-delay: 0s !important;
   transition-delay: 0s !important;
+  -webkit-transition: 0.1s background linear;
+  -o-transition: 0.1s background linear;
   transition: 0.1s background linear;
 }
 [contenteditable='true']:focus {
@@ -620,12 +703,14 @@ input {
   margin: 0 auto;
   position: absolute;
   top: 50%;
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   text-align: center;
 }
 .contacto_item .texto {
   margin-left: 3rem !important;
+  width: -webkit-fit-content;
   width: fit-content;
   width: -moz-fit-content;
   width: -ms-fit-content;
@@ -715,6 +800,8 @@ input {
   margin: 0;
   margin-top: -0.25rem;
   margin-left: 0.5rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
   min-width: fit-content;
   display: inline-block;
   float: right;
@@ -763,6 +850,8 @@ input {
 }
 #experiencialaboral .titulo3,
 #formacionacademica .titulo3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   display: inline-block;
   max-width: 100%;
@@ -797,6 +886,8 @@ input {
 }
 #datospersonales .titulo3 {
   max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: 400;
   line-height: 1.4;
