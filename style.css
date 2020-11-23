@@ -25,6 +25,27 @@ body {
   font-smoothing: antialiased;
 }
 
+#footer-text {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 0;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+#footer-text a:hover {
+  color: #40dca5;
+}
+
+#heart::before {
+  display: inline-block;
+  content: '🤍';
+}
+
+#heart:hover:before {
+  content: '❤️';
+}
+
 #pdf {
   display: -webkit-box;
   display: -ms-flexbox;
