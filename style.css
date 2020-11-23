@@ -272,7 +272,7 @@ input {
   background-color: #0b7af3;
   border-radius: 10rem;
   z-index: 99999;
-  cursor: pointer !important;
+
   background-image: url(../img/icon_delete.svg);
   background-position: center;
   background-size: cover !important;
@@ -303,7 +303,7 @@ input {
   background-color: #0b7af3;
   border-radius: 10rem;
   z-index: 99999;
-  cursor: pointer !important;
+
   background-image: url(../img/icon_add.svg);
   background-position: center;
   background-size: cover !important;
@@ -395,7 +395,7 @@ input {
   width: 100%;
   border-radius: 100px;
   font-size: 1rem;
-  cursor: pointer !important;
+
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -464,7 +464,7 @@ input {
   border-left: 0;
   width: 25%;
   float: left;
-  cursor: pointer !important;
+
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   border: 2px solid #fff;
@@ -475,7 +475,6 @@ input {
   height: 0%;
   padding-bottom: 16%;
   width: 100%;
-  cursor: pointer !important;
 }
 .estrellasjuntas {
   width: 100%;
@@ -538,7 +537,6 @@ input {
   -moz-background-size: cover !important;
   -ms-background-size: cover !important;
   -o-background-size: cover !important;
-  cursor: pointer !important;
 }
 .contacto_item {
   display: block;
