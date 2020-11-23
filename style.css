@@ -22,6 +22,71 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
+
+#pdf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: rgb(121, 214, 181) none repeat scroll 0% 0%;
+  color: white;
+  border-radius: 32px;
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
+  z-index: 9999;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease 0s;
+}
+
+#pdf:hover {
+  scale: 1.1;
+}
+
+#pdf img {
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+#pdf-message {
+  position: fixed;
+  right: 92px;
+  bottom: 6px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  z-index: 9999;
+  box-shadow: rgba(13, 12, 34, 0.1) -6px 0px 30px;
+  padding: 23px 24px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: rgb(13, 12, 34);
+  width: auto;
+  max-width: 260px;
+  line-height: 1.5;
+  font-family: 'Avenir Book1', 'Avenir Book2', 'Avenir Book3', 'Avenir Book4',
+    'Avenir Book5', 'Avenir Book6', poppins, sans-serif;
+  animation: pdfMessage 1s ease-out 3s normal;
+}
+
+@keyframes pdfMessage {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
 .centradovertical {
   left: 0;
   right: 0;
