@@ -106,8 +106,6 @@ footer {
   color: white;
   border-radius: 32px;
   position: fixed;
-  right: 16px;
-  bottom: 16px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
   z-index: 9999;
@@ -116,6 +114,8 @@ footer {
   -webkit-transition: all 0.2s ease 0s;
   -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
+  right: 16px;
+  bottom: 16px;
 }
 
 #pdf:hover {
