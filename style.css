@@ -1003,3 +1003,10 @@ input {
 a {
   text-decoration: none;
 }
+
+@media (max-width: 414px) {
+  #footer-text {
+    width: 16rem;
+    text-align: center;
+  }
+}
