@@ -106,8 +106,8 @@ footer {
   color: white;
   border-radius: 32px;
   position: fixed;
-  right: 8px;
-  bottom: 8px;
+  right: 16px;
+  bottom: 16px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
   z-index: 9999;
