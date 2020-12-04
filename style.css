@@ -25,7 +25,6 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
 }
 
 footer {
@@ -485,7 +484,7 @@ input {
   background-position: center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
+
   -ms-background-size: cover !important;
   -o-background-size: cover !important;
 }
@@ -516,7 +515,7 @@ input {
   background-position: center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
+
   -ms-background-size: cover !important;
   -o-background-size: cover !important;
 }
@@ -540,7 +539,7 @@ input {
   background-position: center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
+
   -ms-background-size: cover !important;
   -o-background-size: cover !important;
 }
@@ -755,7 +754,7 @@ input {
   background-position: 50% 50% !important;
   background-size: cover !important;
   -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
+
   -ms-background-size: cover !important;
   -o-background-size: cover !important;
 }
