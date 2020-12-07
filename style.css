@@ -1013,6 +1013,17 @@ a {
   font-size: 1.8rem;
   line-height: 1.5;
 }
+
+.underline {
+  box-shadow: rgb(205, 243, 225) 0px -0.5rem 0px inset;
+  transition: box-shadow 0.3s ease-out 0s;
+  content: '';
+}
+
+.underline:hover {
+  box-shadow: rgb(205, 243, 225) 0px -1rem 0px inset;
+}
+
 @media (max-width: 909px) {
   #imprimir {
     display: none;
