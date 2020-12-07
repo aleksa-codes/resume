@@ -1004,7 +1004,47 @@ a {
   text-decoration: none;
 }
 
+#mobile-warning {
+  width: 250px;
+  height: 83vh;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+@media (max-width: 909px) {
+  #imprimir {
+    display: none;
+    margin: 0;
+  }
+
+  #mobile-warning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    height: 17vh;
+    margin: 0;
+  }
+
+  #pdf {
+    bottom: 220px;
+  }
+
+  #pdf-message {
+    bottom: 218px;
+  }
+}
+
 @media (max-width: 414px) {
+  body {
+    margin: 0;
+  }
+
   #footer-text {
     width: 16rem;
     text-align: center;
