@@ -288,6 +288,7 @@ input {
 #imprimir {
   min-height: 168.3779527559rem;
   width: 119.0551181102rem;
+  max-width: 100vw;
   background: #fff;
   position: relative;
   margin: 32px auto;
