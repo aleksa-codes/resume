@@ -1042,11 +1042,11 @@ a {
   }
 
   #pdf {
-    bottom: 182px;
+    bottom: 20%;
   }
 
   #pdf-message {
-    bottom: 180px;
+    bottom: 19.5%;
   }
 }
 
