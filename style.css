@@ -1051,10 +1051,6 @@ a {
 }
 
 @media (max-width: 414px) {
-  body {
-    margin: 0;
-  }
-
   #footer-text {
     width: 16rem;
     text-align: center;
