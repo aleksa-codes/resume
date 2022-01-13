@@ -1031,31 +1031,30 @@
             target="_blank"
             >Aleksa Stojsic</a
           >
-<!--           <span id="heart" title="Nevenica 🤍"></span> -->
           Written in HTML & CSS
         </div>
       </div>
     </footer>
     <script>
-      const outPdf = (document.getElementById('pdf').onmouseout = () => {
-        let msg = document.getElementById('pdf-message');
-        msg.style.display = 'none';
-        msg.style.opacity = '0';
-      });
+      const outPdf = (document.getElementById("pdf").onmouseout = () => {
+        let msg = document.getElementById("pdf-message")
+        msg.style.display = "none"
+        msg.style.opacity = "0"
+      })
 
-      const hoverPdf = (document.getElementById('pdf').onmouseover = () => {
-        let msg = document.getElementById('pdf-message');
-        msg.style.display = 'block';
-        msg.style.opacity = '1';
-      });
+      const hoverPdf = (document.getElementById("pdf").onmouseover = () => {
+        let msg = document.getElementById("pdf-message")
+        msg.style.display = "block"
+        msg.style.opacity = "1"
+      })
 
       function popUp() {
-        let pdfMessage = document.getElementById('pdf-message');
-        pdfMessage.style.display = 'none';
-        pdfMessage.style.opacity = '0';
+        let pdfMessage = document.getElementById("pdf-message")
+        pdfMessage.style.display = "none"
+        pdfMessage.style.opacity = "0"
       }
 
-      window.addEventListener('load', () => setTimeout(popUp, 4000));
+      window.addEventListener("load", () => setTimeout(popUp, 4000))
     </script>
   </body>
 </html>
