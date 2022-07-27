@@ -34,6 +34,12 @@ footer {
   margin-top: 8rem;
 }
 
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -353,7 +359,7 @@ input {
   position: relative;
 }
 .sortable .cuadro {
-  padding: 0.5rem;
+  padding: 0.25rem;
   padding-right: 2rem;
   padding-left: 2rem;
   position: relative;
@@ -849,6 +855,15 @@ input {
   line-height: 1;
   padding: 0.5rem;
   margin: 0;
+}
+
+.titulo3 a {
+  color: #0072e5;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 127, 255, 0.4);
+}
+.titulo3 a:hover {
+  text-decoration-color: inherit;
 }
 #intereses .titulo3,
 #otros .titulo3 {
