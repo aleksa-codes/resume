@@ -105,14 +105,14 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   background: rgb(121, 214, 181) none repeat scroll 0% 0%;
   color: white;
-  border-radius: 32px;
+  border-radius: 50%;
   position: fixed;
-  bottom: 16px;
-  right: 16px;
+  bottom: 12px;
+  right: 12px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
   z-index: 9999;
@@ -144,7 +144,7 @@ footer {
 
 #pdf-message {
   position: fixed;
-  right: 96px;
+  right: 104px;
   bottom: 14px;
   background: rgb(255, 255, 255) none repeat scroll 0% 0%;
   z-index: 9999;
@@ -152,7 +152,7 @@ footer {
   box-shadow: rgba(13, 12, 34, 0.1) -6px 0px 30px;
   padding: 23px 24px;
   border-radius: 4px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: rgb(13, 12, 34);
   width: auto;
   max-width: 260px;
@@ -1061,7 +1061,7 @@ a {
   }
 
   #pdf-message {
-    bottom: 19.5%;
+    bottom: 20.5%;
   }
 }
 
