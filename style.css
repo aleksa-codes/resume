@@ -159,8 +159,8 @@ footer {
   width: auto;
   max-width: 260px;
   line-height: 1.5;
-  font-family: 'Avenir Book1', 'Avenir Book2', 'Avenir Book3', 'Avenir Book4',
-    'Avenir Book5', 'Avenir Book6', poppins, sans-serif;
+  font-family: 'Avenir Book1', 'Avenir Book2', 'Avenir Book3', 'Avenir Book4', 'Avenir Book5', 'Avenir Book6', poppins,
+    sans-serif;
   -webkit-animation: pdfMessage 1s ease-out 3s normal forwards;
   animation: pdfMessage 1s ease-out 3s normal forwards;
 }
@@ -322,8 +322,7 @@ input {
   transition: 0.5s opacity ease, 0.5s -webkit-transform ease;
   -o-transition: 0.5s opacity ease, 0.5s transform ease;
   transition: 0.5s opacity ease, 0.5s transform ease;
-  transition: 0.5s opacity ease, 0.5s transform ease,
-    0.5s -webkit-transform ease;
+  transition: 0.5s opacity ease, 0.5s transform ease, 0.5s -webkit-transform ease;
   -webkit-transition-delay: 0.5s;
   -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
